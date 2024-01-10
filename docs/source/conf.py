@@ -1,10 +1,13 @@
 # Configuration file for the Sphinx documentation builder.
 
 # -- Project information
+import pathlib
+import sys
+sys.path.insert(0, pathlib.Path(__file__).parents[2].resolve().as_posix())
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'tsystem'
+copyright = '2024, Chieh'
+author = 'Chieh'
 
 release = '0.1'
 version = '0.1.0'
@@ -30,6 +33,7 @@ templates_path = ['_templates']
 # -- Options for HTML output
 
 html_theme = 'sphinx_rtd_theme'
+# html_static_path = ['_static']
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
